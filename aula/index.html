@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 03 aula - Textos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Raleway", sans-serif;
+            color: #232224;
+            background-color: #FCFBF6;
+            margin: 0 auto;
+            padding: 2em;
+            max-width: 90%;
+            box-sizing: border-box;
+        }
+        .rio {
+            border: solid 1px transparent;
+            width: 1em;
+            height: 0.30em;
+            border-radius: 1em;
+            margin: 0 0.2em; 
+            display: inline-block;
+        }
+        .container-rio{
+            margin-left: 1em;
+        }
+        .rio:nth-child(1) {
+            background-color: #1e3799;
+        }
+        .rio:nth-child(2) {
+            background-color: #FFCD03;
+        }
+        .rio:nth-child(3) {
+            background-color: #CA424F;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+        }
+        .separador{
+            border-top: 2px solid #23222421;
+            border-radius: 1em;
+        }
+        .separador2{
+            border-top: 1.5px solid #23222421;
+            border-radius: 1em;
+        }
+        .linha h1,
+        .linha h2,
+        .linha h3,
+        .linha h4,
+        .linha h5,
+        .linha h6 {
+            display: inline-block;
+            margin: 0;
+        }
+        .grid-item a {
+            display: block;
+            margin-bottom: 1em;
+        }
+        a {
+            text-decoration: none;
+            color: #232224;
+            font-weight: bold;
+        }
+        .grid-container {
+            display: grid;
+            grid-gap: 1em;
+            grid-template-columns: repeat(3, 1fr);
+            margin-bottom: 2em;
+        }
+        .grid-item {
+            min-width: 10em;
+            max-height: 20em;
+            padding: 2em;
+            border: 1px solid #232224;
+            border-radius: 1em;
+        }
+                input{
+            border-radius: 0.5em;
+            margin-bottom: 1em;
+            padding: 0.5em;
+        }
+        label{
+            font-weight: bold;
+            margin-right: 1em;
+        }
+        .label-a{
+            font-weight: normal;
+        }
+        select{
+            border-radius: 0.4em;
+            width: 13.5em;
+            margin-bottom: 1em;
+        }
+        textarea{
+            margin: 0.5em 0 1.5em 0;
+            width: 20em;
+            height: 5em;
+            border-radius: 0.5em;
+            border: solid 1px #232224;
+            resize: none;
+        }
+        .btn-container{
+            margin: 2em 0 0 0;
+            text-align: center;
+        }
+        button{
+            margin: 1em 0.5em;
+            border: none;
+            padding: 0.6em;
+            border-radius: 1em;
+            font-weight: bold;
+        }
+        .btn-a{
+            background-color: #B9CB65;
+        }
+        .btn-b{
+            background-color: #CA424F;
+            color: #FCFBF6;
+        }
+        .image img, .video video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 1em;
+            border-radius: 0.5em;
+        }
+        .footer2{
+            margin: 2em 0;
+        }
+        .menu{
+            margin-bottom: 1em;
+        }
+        .menu a{
+            margin-right: 1em;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+<div class="container">
+        <h1>Módulo 3 aula</h1>
+        <div class="container-rio">
+            <div class="rio"></div>
+            <div class="rio"></div>
+            <div class="rio"></div>
+        </div>
+</div>
+<div class="container">
+    <nav class="menu">
+        <a href="#textos">Textos</a>
+        <a href="#containers">Containers</a>
+        <a href="#listas">Listas</a>
+        <a href="#tabelas">Tabelas</a>
+        <a href="#formularios">Formulários</a>
+        <a href="#midias">Mídias</a>
+    </nav>
+</div>
+<div class="separador"></div>
+
+    <div id="textos" class="row">
+        <h2>Textos</h2>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h2>Citações</h2>
+            <blockquote>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, labore velit. Sit ipsa cupiditate architecto exercitationem eius laborum molestiae excepturi dolor aspernatur commodi, ducimus cum fuga! Iste minus atque saepe?
+            </blockquote>
+        </div>
+        <div class="grid-item">
+            <h2>Parágrafos</h2>
+            <p>        
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deserunt adipisci cum voluptatum, veniam perferendis unde recusandae corporis iure pariatur! Excepturi fuga culpa veritatis quod repudiandae ratione eum itaque ea!
+            </p>
+        </div>
+        <div class="grid-item">
+            <h2>Tags visuais de texto</h2>
+            <p>
+                <b>Bold</b>
+                <br />              
+                <strong>Strong</strong>
+                <br />
+                Quebra de linha
+                <br />
+                <i>Italico</i>
+                <br />
+                <em>Italico enfatizado</em>
+                <br />
+                <mark>Marcatexto</mark>
+                <br />
+                <del>Riscado</del>
+                <br />
+                <small>Texto pequeno</small>
+                <br />
+                <span>Span - Estilização CSS ou JS</span>
+            </p>
+        </div>
+        
+        <div class="grid-item">
+            <h2>Tags de títulos</h2>
+            <div class="linha">
+                <h1>h1</h1>
+                <h2>h2</h2>
+                <h3>h3</h3>
+                <h4>h4</h4>
+                <h5>h5</h5>
+                <h6>h6</h6>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <h2>Endereço</h2>
+            <address>
+                Rua Tracker, nº 123 - CEP: 12345-678
+            </address>
+        </div>
+
+        <div class="grid-item">
+            <h2>Links</h2>
+            <a href="https://ebaconline.com.br/">EBAC</a>
+            <a href="tel:3333-3333">Tel:3333-3333</a>
+            <a href="mailto:rio@tracker.com">Entre em contato por e-mail</a>
+        </div>
+    </div>
+
+<div class="separador2"></div>
+    
+    <div id="containers" class="row">
+        <h2>Containers</h2>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <header>
+                <h2>Cabeçalho</h2>
+                <nav class="menu">
+                    <a href="#">Item 1</a>
+                    <a href="#">Item 2</a>
+                    <a href="#">Item 3</a>
+                    <a class="a2" href="#">Item 4</a>
+                </nav>
+            </header>
+        </div>
+        <div class="grid-item">
+            <h2>Section</h2>
+            <section>
+                <h3>Cores</h3>
+                <article>
+                    <html>Impacto das cores na tomada de decisões</html>
+                </article>
+            </section>
+            <section>
+                <h3>Formas</h3>
+                <article>
+                    <h4>As formas que escolhemos</h4>
+                </article>
+            </section>
+        </div>
+        <div class="grid-item">
+            <h2>Aside</h2>
+            <aside>
+                Barra Lateral
+            </aside>
+            <h2>Footer</h2>
+            <footer>
+                &copy; 2024 - Todos os direitos reservados
+            </footer>
+        </div>
+    </div>
+
+<div class="separador2"></div>
+
+<div id="listas" class="row">
+    <h2>Listas</h2>
+</div>
+<div class="grid-container">
+    <div class="grid-item">
+            <section>
+                <h2>Listas ordenadas</h2>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                </ol>
+            </section>
+    </div>
+    <div class="grid-item">
+        <section>
+            <h2>Listas não ordenadas</h2>
+            <ul>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+            </ul>
+        </section>
+        
+</div>
+</div>
+
+<div class="separador2"></div>
+
+<div id="tabelas" class="row">
+    <h2>Tabelas</h2>
+</div>
+
+<div class="grid-container">
+    <div class="grid-item">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do aluno</th>
+                    <th>Nota do aluno</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aluno A</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Aluno B</td>
+                    <td>7</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><b>Média da turma</b></td>
+                    <td><b>8</b></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+<div class="separador2"></div>
+
+<div id="formularios" class="row">
+    <h2>Formulários</h2>
+</div>
+<div class="grid-container">
+    <div class="grid-item">
+
+        <form>
+            <label>Input</label>
+            <input type="text" placeholder="Text"/>
+            <br/>
+            <label for="email">Input</label>
+            <input id="email" t type="email" placeholder="E-mail"/>
+            <br/>
+            <label>Input</label>
+            <input type="tel" placeholder="Telefone"/>
+            <br/>
+            <label>Input</label>
+            <input type="number" placeholder="number" max="10" min="1" step="1"/>
+            <br/>
+            <label for="user">Usuário:</label>
+            <input  id="user" type="text" placeholder="User">
+            <br/>
+            <label for="pw" >Senha</label>
+            <input id="pw" type="password" placeholder="Password" autocomplete="new-password"/>
+            <br/>
+            <label>File</label>
+            <input type="file">
+            <br/>
+        </form>
+    </div>
+    <div class="grid-item">
+        <form>
+            <label>Color</label>
+            <input type="color">
+            <br/>
+            <label>Checkbox</label>
+            <input type="checkbox" id="checkbox-termos"/><label class="label-a" for="checkbox-termos"><small>Aceito os termos</small></label>
+            <br/>
+            <br/>
+            <label>Perguntas</label>
+            <p>Qual sua cor favorita?  <small>(radio)</small></p>
+            <input id="cor-vermelho" name="cor-fav" type="radio"> <label for="cor-vermelho" class="label-a">Vermelho</label>
+            <input id="cor-azul" name="cor-fav" type="radio"> <label for="cor-azul" class="label-a">Azul</label>
+            <br/>
+            <label>Text area</label>
+            <br/>
+            <textarea></textarea>
+            <br/>
+        </form>
+    </div>
+<div class="grid-item">
+    <form>
+        <p>Quais seus filmes favoritos?<br/><small>(Select option)</small></p>
+        <select multiple>
+            <option value="Film A">Film A</option>
+            <option value="Film B">Film B</option>
+            <option value="Film C">Film C</option>
+        </select>
+        <br/>
+        <div class="btn-container">
+            <label>Butons</label>
+            <br/>
+            <button class="btn-a" type="submit">Enviar</button>
+            <button class="btn-b" type="reset">Limpar</button>
+        </div>
+    </form>
+</div>
+</div>
+<div class="separador2"></div>
+
+<div id="midias" class="row">
+    <h2>Mídias</h2>
+</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>Imagens</h2>
+        <div class="image">
+            <img src="./mideas/imagem_module 3.jpg" alt="Abelha em uma flor">
+        </div>
+    </div>
+    <div class="grid-item">
+        <h2>Vídeos</h2>
+        <div class="video">
+            <video controls src="./mideas/video_module 3.mp4" alt="Servindo uma bebida quente em um acampamento perto de um fogueira"></video>
+        </div>
+    </div>
+    <div class="grid-item">
+        <h2>Áudios</h2>
+        <div class="audio">
+            <audio controls src="./mideas/musica_module 3.mp3" alt="Cozy relax music" ></audio>
+        </div>
+    </div>
+</div>
+<div class="separador2"></div>
+<footer class="footer2">
+
+</footer>
+</body>
+</html>

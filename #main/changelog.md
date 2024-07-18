@@ -12,6 +12,11 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 ### Fixed
 ### Security 
 -->
+## [0.1.1] - 2024-07-18
+### Added
+- Pasta tarefa - Tarefa completa
+### Changed
+- changelog.md
 ## [0.1.0] - 2024-07-16
 ### Added
 - branch modulo_03 

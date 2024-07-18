@@ -15,9 +15,8 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 
 ## [0.1.1] - 2024-07-18
 ### Added
-- Branch modulo_04
-### Removed
--  Arquivo do módulo 03
+- Branch modulo_04 - Arquivos de códigos
+- Branch modulo_05 - Arquivos e códigos aula
 ### Changed
 - changelog.md
 ## [0.1.0] - 2024-07-16

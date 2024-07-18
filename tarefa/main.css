@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    color: #232224;
+    background-color: #FCFBF6;
+}
+body{
+    padding: 1em;
+}
+.rio {
+    border: solid 1px transparent;
+    width: 1.3em;
+    height: 0.3em;
+    border-radius: 1em;
+    margin: 0 0.2em; 
+    display: inline-block;
+}
+.rio:nth-child(1) {
+    background-color: #1e3799;
+}
+.rio:nth-child(2) {
+    background-color: #FFCD03;
+}
+.rio:nth-child(3) {
+    background-color: #CA424F;
+}
+
+/*Custom*/
+.container{
+    margin: 0 auto;
+    width: 1366px;
+    max-width: 90%;
+}
+header li{
+    display: inline;
+    margin-right: 1em;
+}
+header li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+nav{
+    margin: 0.5em 0 1em 0;
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.articles article img{
+    width: 100%;
+    max-height: 10em;
+    background-size: cover;
+    border-radius: 0.7em;
+    object-fit: cover;
+}
+.articles article{
+    width: 30%;
+    margin-bottom: 3em;
+}
+.container h3, p{
+    margin: 0.5em 0 0 0;
+}
+.creation-date{
+    color: #69696C;
+    font-size: 0.9em;
+}
+h2{
+    margin-bottom: 0.3em;
+    padding-bottom: 0.5em;
+}
+#sports .container h2{
+    border-bottom: solid 2px #CA424F;
+    color: #CA424F;
+}
+#economy .container h2{
+    border-bottom: solid 2px #1e3799;
+    color:#1e3799;
+}
+#fun .container h2{
+    border-bottom: solid 2px #F57840;
+    color: #F57840;
+}
+#sci .container h2{
+    border-bottom: solid 2px #06373A;
+    color:#06373A;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+footer div {
+    display: flex;
+    margin: 0 1em;
+}
+footer p {
+    margin: 0;
+}
+.rio2 {
+    border: solid 1px transparent;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 1em;
+    margin: 0 0.2em; 
+    display: inline-block;
+}
+.rio2:nth-child(1) {
+    background-color: #1e3799;
+}
+.rio2:nth-child(2) {
+    background-color: #FFCD03;
+}
+.rio2:nth-child(3) {
+    background-color: #CA424F;
+}

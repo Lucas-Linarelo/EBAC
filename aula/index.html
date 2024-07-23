@@ -1,98 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game shop -  A sua loja de games</title>
+    <title>HTML com JS</title>
     <link rel="stylesheet" href="./main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Game Shop</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">Sobre a loja</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contato</a>
-                    </li>
-                </ul>
-            </nav>
+    <div class="container">
+        <h1>EBAC Banking</h1>
+        <h2>Depósitos</h2>
+        <div>
+            <div class="rio"></div>
+            <div class="rio"></div>
+            <div class="rio"></div>
         </div>
-    </header>
-    <section id="about">
-        <div class="container">
-            <img class="store-front" src="./images/loja.jpg" alt="Fachada da loja Games Shop">
-            <div>
-                <h2>Sobre a loja</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum nam iure maxime reiciendis qui, magni amet porro facere sequi iste delectus eius autem nihil quae fuga minus fugiat necessitatibus sunt.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quos, asperiores illum esse iusto ipsa quasi doloremque autem repellat dolores alias ullam nobis soluta quas, a neque? Eum, iusto fugiat.
-                </p>
-                <ul class="brands-list">
-                    <li><img src="./images/nintendo.png" alt="nintendo"></li>
-                    <li><img src="./images/xbox.png" alt="xbox"></li>
-                    <li><img src="./images/playstation.png" alt="playstation"></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <div class="contact-methods">
-                <div>
-                    <h3>Fale conosco</h3>
-                    <form>
-                        <input type="text" placeholder="Seu nome" required/>
-                        <input type="email" placeholder="Seu -email"required/>
-                        <input type="tel" placeholder="Seu telefone (opcional)"/>
-                        <textarea placeholder="Sua mensagem" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <div>
-                    <h3>Nos acompanhe</h3>
-                    <ul class="xoxo-links">
-                        <li>
-                            <a href="#" title="Siga-nos no instagram">
-                                <img src="./images/instagram.png" alt="Logo instagram">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Siga-nos no facebook">
-                                <img src="./images/facebook.png" alt="Logo facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Visite nosso canal no youtube">
-                                <img src="./images/youtube.png" alt="Logo youtube">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Venha até nós</h3>
-                    <p>
-                        Rua JavaScrpt nº 124 - Vila HTML - São Paulo -SP
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>
-                &copy; 2024 - Game Shop - Todos os direitos reservados
+        <form id="form-deposito">
+            <input id="nome-beneficiario" type="text" required placeholder="Nome completo do beneficiário" />
+            <p class="error-message">
+                Campo de nome imcompleto, confira os dados.
             </p>
-        </div>
-    </footer>
+            <input id="numero-conta" type="number" required placeholder="Número da conta" />
+            <input id="valor-deposito" type="number" required placeholder="Valor" />
+            <textarea id="mensagem-envio" placeholder="Descrição (opcional)"></textarea>
+            <button id="btn-depositar" type="submit">Depositar</button>
+        </form>
+        <p class="success-message"></p>
+
+    </div>
+
+
+<script src="./main.js"></script>
+
 </body>
 </html>

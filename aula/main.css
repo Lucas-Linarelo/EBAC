@@ -1,109 +1,100 @@
 * {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: 0;
-    font-family: "Raleway", sans-serif;
+
 }
-body{
+
+body {
     background-color: #FCFBF6;
     color: #232224;
-}
-.container{
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-}
-header .container,
-section .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-section .container{
-    align-items: flex-start;
-    padding: 24px 0;
-    color: #0c2461;
-}
-header{
-    padding: 16px;
-    background-color: #0c2461;
-    color: #FCFBF6;
-    font-weight: normal;
-}
-header nav li{
-    display: inline;
-    margin-left: 16px;
-    font-size: 18px;
-    font-weight: 700;
-}
-header nav li a{
-    text-decoration: none;
-    color: #FCFBF6;
+    font-family: "Raleway", sans-serif;
 }
 
-.brands-list img{
-    height: 24px;
-    margin: 16px 16px 0 0;
-}
-.brands-list li{
-    display: inline;
-}
-section h2, h3{
-    margin-bottom: 16px;
-}
-section p{
-    margin-bottom: 8px;
-}
-.store-front{
-    margin-right: 32px;
+.container {
+    margin: 80px auto;
+    max-width: 340px;
+    width: 90%;
 }
 
-.xoxo-links li{
-    display: inline;
-    margin:  0 8px 0 0;
-}
-.xoxo-links li a{
-    text-decoration: none;
-}
-.xoxo-links img{
-    height: 24px;
+form {
+    margin-top: 16px;
 }
 
-#contact .container{
+input, textarea, button {
     display: block;
-}
-.contact-methods{
-    display: flex;
-    justify-content: space-between;
-}
-
-form input,
-form textarea,
-form button{
-    display: block;
-    width: 320px;
-    margin: 0 0 8px 0;
     padding: 8px;
-}
-form textarea{
+    margin-bottom: 8px;
+    width: 100%;
     resize: none;
-    height: 180px;
-}
-form button{
-    background-color: #0c2461;
-    color: #FCFBF6;
-    font-size: 16px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-form button:hover{
-    background-color: #0c2461c4;
+    border-radius: 0.3em;
+    border: solid 1px #23222438;
 }
 
-footer{
-    background-color: #0c2461;
+button {
+    background-color: #49B265;
+    border: none;
+    text-transform: uppercase;
     color: #FCFBF6;
-    padding: 16px 0;
-    text-align: center; 
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+button:hover {
+    background-color: #159947;
+}
+.success-message{
+    background-color: #49B265;
+    color: #FCFBF6;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    display: none;
+}
+.error-message{
+    color: #CA424F;
+    margin-bottom: 0.5em;
+    font-size: 12px;
+    display: none;
+}
+input.error{
+    color: #CA424F;
+    border-color: #CA424F;
+}
+
+/* Remove as setas do input number no Chrome, Safari, Edge, e Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove as setas do input number no Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Remove as setas do input number no Internet Explorer */
+input[type="number"] {
+    -ms-appearance: textfield;
+}
+
+
+
+.rio {
+    border: solid 1px transparent;
+    width: 1.3em;
+    height: 0.3em;
+    border-radius: 1em;
+    margin: 0 0.2em; 
+    display: inline-block;
+}
+.rio:nth-child(1) {
+    background-color: #1e3799;
+}
+.rio:nth-child(2) {
+    background-color: #FFCD03;
+}
+.rio:nth-child(3) {
+    background-color: #CA424F;
 }

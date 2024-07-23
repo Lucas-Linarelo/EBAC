@@ -13,6 +13,11 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 ### Security 
 -->
 
+## [0.1.2] - 2024-07-18
+### Added
+- Branch modulo_07
+### Removed
+- Pasta Tarefa - Movida para diretório Projeto 1
 ## [0.1.1] - 2024-07-18
 ### Added
 - Branch modulo_04 - Arquivos de códigos

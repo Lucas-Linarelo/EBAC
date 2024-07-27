@@ -12,6 +12,9 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 ### Fixed
 ### Security 
 -->
+## [0.1.4] - 2024-07-27
+### Added
+- Tarefa e Tarefa webinars
 ## [0.1.3] - 2024-07-18
 ### Added
 - aula modulo 7

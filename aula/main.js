@@ -1,47 +1,46 @@
 const form = document.getElementById('form-deposito');
-const nomeBeneficiado = document.getElementById('nome-beneficiario');
-let formEValido = false;
+const nomeBeneficiario = document.getElementById('nome-beneficiario');
+let formValido = false;
 
 function validaNome(nomeCompleto){
     const nomeComoArray = nomeCompleto.split(' ');
-    return nomeComoArray.length >=2;
+    return nomeComoArray.length>=2;
 }
 
-form.addEventListener('submit',function(e){
+
+form.addEventListener('submit', function(e){
     e.preventDefault();
 
     const numeroContaBeneficiario = document.getElementById('numero-conta');
     const valorDeposito = document.getElementById('valor-deposito');
     const mensagemEnvio = document.getElementById('mensagem-envio');
-    const mensagemSucesso = `Montante de: <b>${valorDeposito.value}</b> depositado para o cliente: <b>${nomeBeneficiado.value}</b>  - conta: <b>${numeroContaBeneficiario.value}</b>.`;
+    const mensagemSucesso = `Montante de: <b>${valorDeposito.value}</b> depositado para o cliente: <b>${nomeBeneficiario.value}</b> - conta: <b>${numeroContaBeneficiario.value}</b>`;
 
-
-    formEValido = validaNome(nomeBeneficiado.value)
-    if(formEValido){
+    formValido = validaNome(nomeBeneficiario.value)
+    if(formValido){
+        
         const containerMensagemSucesso = document.querySelector('.success-message');
-        containerMensagemSucesso.innerHTML = mensagemSucesso;
-        containerMensagemSucesso.style.display = 'block';
+        containerMensagemSucesso.innerHTML=mensagemSucesso;
+        containerMensagemSucesso.style.display='block';
 
-        nomeBeneficiado.value='';
-        valorDeposito.value='';
-        numeroContaBeneficiario.value='';
-        mensagemEnvio.value='';
-
-    } else{
-        nomeBeneficiado.style.border = '1px solid #CA424F';
-        document.querySelector('.error-message').style.display='block';
+        nomeBeneficiario.value = '';
+        numeroContaBeneficiario.value = '';
+        valorDeposito.value = '';
+        mensagemEnvio.value = '';
+    }else{
+        document.querySelector('.fail-message').style.display = 'block';
+        nomeBeneficiario.style.border = '1px solid #CA424F'
     }
-
 })
 
-nomeBeneficiado.addEventListener('keyup', function(e){
-    formEValido = validaNome(e.target.value);
-    if(!formEValido){
-        nomeBeneficiado.classList.add('error')
-        // nomeBeneficiado.style.border = '1px solid #CA424F';
-        document.querySelector('.error-message').style.display='block';
+nomeBeneficiario.addEventListener('keyup', function(e){
+    formValido = validaNome(e.target.value);
+
+    if(!formValido){
+        document.querySelector('.fail-message').style.display = 'block';
+        nomeBeneficiario.classList.add('error');
     }else{
-        nomeBeneficiado.classList.remove('error')
-        document.querySelector('.error-message').style.display='none';
+        nomeBeneficiario.classList.remove('error');
+        nomeBeneficiario.style.border = '';
     }
-});
+})

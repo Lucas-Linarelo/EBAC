@@ -30,7 +30,7 @@ form {
     margin-top: 40px;
 }
 
-input, textarea, button {
+input, button {
     display: block;
     padding: 8px;
     margin-bottom: 8px;
@@ -38,9 +38,6 @@ input, textarea, button {
     resize: none;
     border: solid 1px #2322242f;
     border-radius: 0.5em;
-}
-textarea{
-    height: 5em;
 }
 
 button {
@@ -74,4 +71,7 @@ input.error{
     color: #CA424F;
     border-color: #CA424F;
     outline-color: #CA424F;
+}
+label{
+    font-weight: 700;
 }

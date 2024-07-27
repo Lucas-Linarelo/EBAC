@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML com JS</title>
+    <title>EBAC Modulo 7 - Tarefa</title>
     <link rel="stylesheet" href="./main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,20 +12,19 @@
 </head>
 <body>
     <div class="container">
-        <h1>EBAC Banking</h1>
-        <h2>Depósitos</h2>
-        <form id="form-deposito">
-            <input id="nome-beneficiario" type="text" required placeholder="Nome completo do beneficiário" />
+        <h1>EBAC Modulo 7 - Tarefa</h1>
+        <h2>Transferências</h2>
+        <form id="form-transferencia">
+            <label for="">Saldo total</label>
+            <input id="campo-b" type="number" required placeholder="Saldo total" />
             <p class="fail-message">
-                Nome incompleto
+                Saldo insuficiente
             </p>
-            <input id="numero-conta" type="number" required placeholder="Número da conta" />
-            <input id="valor-deposito" type="number" required placeholder="Valor" />
-            <textarea id="mensagem-envio" placeholder="Descrição (opcional)"></textarea>
-            <button type="submit">Depositar</button>
+            <label for="">Valor para Transferir</label>
+            <input id="campo-a" type="number" required placeholder="Valor para transferência" />
+            <button type="submit">Transferir</button>
         </form>
-        <p class="success-message">
-        </p>
+        <p class="success-message"></p>
     </div>
     <script src="./main.js"></script>
 </body>

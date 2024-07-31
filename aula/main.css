@@ -1,77 +1,102 @@
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
 }
-/* AI */
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-/* AI */
 input[type=number] {
     -moz-appearance: textfield;
 }
-
-body {
+body{
     background-color: #FCFBF6;
     color: #232224;
+    padding-top: 100px;
 }
-
-.container {
-    margin: 80px auto;
-    max-width: 640px;
+.container{
+    max-width: 960px;
     width: 90%;
-}
-
-form {
-    margin-top: 40px;
-}
-
-input, textarea, button {
-    display: block;
-    padding: 8px;
-    margin-bottom: 8px;
-    width: 100%;
-    resize: none;
-    border: solid 1px #2322242f;
+    margin: 0 auto;
+    background-color: #ECE9E0;
     border-radius: 0.5em;
+    padding: 2em;
 }
-textarea{
-    height: 5em;
+header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
 }
-
-button {
-    background-color: #49B265;
-    border: none;
-    text-transform: uppercase;
-    color: #fff;
+header img{
+    height: 46px;
+    margin-right: 16px;
+}
+header h1{
+    font-size: 40px;
     font-weight: bold;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+form input,button{
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #232224;
     font-size: 18px;
-    font-style: italic;
+    width: 200px;
+    border-radius: 0.3em;
+}
+form button{
+    background-color: #159947;
+    color: #FCFBF6;
+    font-weight: bold;
     cursor: pointer;
+    border-bottom: none;
+    width: 120px;
 }
 
-button:hover {
-    background-color: #49b265d7;
-}
 
-.success-message{
-    background-color: #49b26549;
-    padding: 1em;
-    border-radius: 0.5em;
-    display: none;
+table{
+    width: 100%;
 }
-.fail-message{
-    color: #CA424F;
-    font-size: small;
-    margin-bottom: 8px;
-    display: none;
+table th{
+    border-bottom: 2px solid #232224;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
 }
-input.error{
-    color: #CA424F;
-    border-color: #CA424F;
-    outline-color: #CA424F;
+table td{
+    text-align: center;
+    font-size: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #2322241c;
+}
+table td img{
+    height: 30px;
+}
+.tfut td{
+    border-bottom: none;
+    font-weight: bold;
+    padding-top: 2.5em;
+    font-size: 18px;
+}
+.resultado{
+    padding: 8px;
+    font-weight: bold;
+    color: #FCFBF6;
+    background-color: #232224;
+    border-radius: 3px;
+}
+.aprovado{
+    background-color: #159947;
+}
+.reprovado{
+    background-color: #CA424F;
 }

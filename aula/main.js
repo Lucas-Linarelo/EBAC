@@ -1,46 +1,60 @@
-const form = document.getElementById('form-deposito');
-const nomeBeneficiario = document.getElementById('nome-beneficiario');
-let formValido = false;
+const form = document.getElementById('form-atividade');
+const imgAprovado = '<img src="./images/aprovado.png" alt="Emoji celebrando"/>';
+const imgReprovado = '<img src="./images/reprovado.png" alt="Emoji triste"/>';
+const atividades = [];
+const notas = [];
+const spanAprovado = '<span class="resultado aprovado">Aprovado</span>';
+const spanReprovado = '<span class="resultado reprovado">Reprovado</span>';
+const notaMinima = parseFloat(prompt("Digite a nota mínima"));
 
-function validaNome(nomeCompleto){
-    const nomeComoArray = nomeCompleto.split(' ');
-    return nomeComoArray.length>=2;
-}
-
+let linhas = '';
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
+    adicionaLinha();
+    atualizaTabela();
+    atualizaMediaFinal();
+    calculaMediaFinal();
+});
 
-    const numeroContaBeneficiario = document.getElementById('numero-conta');
-    const valorDeposito = document.getElementById('valor-deposito');
-    const mensagemEnvio = document.getElementById('mensagem-envio');
-    const mensagemSucesso = `Montante de: <b>${valorDeposito.value}</b> depositado para o cliente: <b>${nomeBeneficiario.value}</b> - conta: <b>${numeroContaBeneficiario.value}</b>`;
+function adicionaLinha(){
+    const inputNomeAtividade = document.getElementById('nome-atividade');
+    const inputNotaAtividade = document.getElementById('nota-atividade');
 
-    formValido = validaNome(nomeBeneficiario.value)
-    if(formValido){
-        
-        const containerMensagemSucesso = document.querySelector('.success-message');
-        containerMensagemSucesso.innerHTML=mensagemSucesso;
-        containerMensagemSucesso.style.display='block';
-
-        nomeBeneficiario.value = '';
-        numeroContaBeneficiario.value = '';
-        valorDeposito.value = '';
-        mensagemEnvio.value = '';
-    }else{
-        document.querySelector('.fail-message').style.display = 'block';
-        nomeBeneficiario.style.border = '1px solid #CA424F'
+    if(atividades.includes(inputNomeAtividade.value)){
+        alert(`A atividade: ${inputNomeAtividade.value} já foi inserida anteriormente.`);
     }
-})
 
-nomeBeneficiario.addEventListener('keyup', function(e){
-    formValido = validaNome(e.target.value);
+    atividades.push(inputNomeAtividade.value);
+    notas.push(parseFloat(inputNotaAtividade.value));
 
-    if(!formValido){
-        document.querySelector('.fail-message').style.display = 'block';
-        nomeBeneficiario.classList.add('error');
-    }else{
-        nomeBeneficiario.classList.remove('error');
-        nomeBeneficiario.style.border = '';
+    let linha = '<tr>';
+    linha += `<td>${inputNomeAtividade.value}</td>`;
+    linha += `<td>${inputNotaAtividade.value}</td>`;
+    linha += `<td>${inputNotaAtividade.value >= notaMinima ? imgAprovado : imgReprovado }</td>`;
+    linha += '</tr>';
+
+    linhas += linha;
+
+    inputNomeAtividade.value = '';
+    inputNotaAtividade.value = '';
+}
+
+function atualizaTabela(){
+    const corpoTabela = document.querySelector('tbody');
+    corpoTabela.innerHTML = linhas;
+}
+
+function atualizaMediaFinal(){
+    const mediaFinal = calculaMediaFinal();
+    document.getElementById('media-final-valor').innerHTML = mediaFinal;
+    document.getElementById('media-final-resultado').innerHTML = mediaFinal >=notaMinima? spanAprovado :spanReprovado;
+}
+function calculaMediaFinal(){
+    let somaNotas = 0;
+    for (let i=0; i<notas.length; i++){
+        somaNotas +=notas[i];
     }
-})
+
+    return somaNotas/notas.length;
+}

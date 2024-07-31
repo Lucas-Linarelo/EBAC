@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML com JS</title>
+    <title>Módulo 08 - Aula</title>
     <link rel="stylesheet" href="./main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,20 +11,33 @@
 </head>
 <body>
     <div class="container">
-        <h1>EBAC Banking</h1>
-        <h2>Depósitos</h2>
-        <form id="form-deposito">
-            <input id="nome-beneficiario" type="text" required placeholder="Nome completo do beneficiário" />
-            <p class="fail-message">
-                Nome incompleto
-            </p>
-            <input id="numero-conta" type="number" required placeholder="Número da conta" />
-            <input id="valor-deposito" type="number" required placeholder="Valor" />
-            <textarea id="mensagem-envio" placeholder="Descrição (opcional)"></textarea>
-            <button type="submit">Depositar</button>
+        <header>
+            <img src="./images/logo.png" alt="Emoji de Capelo">
+            <h1>Calculadora de médias</h1>
+        </header>
+        <form id="form-atividade">
+            <input id="nome-atividade" type="text" required placeholder="Nome da atividade"/>
+            <input id="nota-atividade" type="number" required placeholder="Nota da atividade" min="0" max="10"/>
+            <button>Adicionar +</button>
         </form>
-        <p class="success-message">
-        </p>
+        <table cellspacing="0">
+            <thead >
+                <tr>
+                    <th>Nome da Atividade</th>
+                    <th>Nota da atividade</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot class="tfut">
+                <tr>
+                    <td>Média final</td>
+                    <td id="media-final-valor">-</td>
+                    <td id="media-final-resultado">-</td>
+                </tr>
+            </tfoot>
+        </table>
     </div>
     <script src="./main.js"></script>
 </body>

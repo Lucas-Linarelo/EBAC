@@ -12,6 +12,9 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 ### Fixed
 ### Security 
 -->
+## [0.1.7] - 2024-07-31
+### Added
+- Aula e Tarefa módulo 09 completa
 ## [0.1.6] - 2024-07-31
 ### Added
 - Aula módulo 08 completa

@@ -1,44 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo 08 - Aula</title>
-    <link rel="stylesheet" href="./main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>JQuery</title>
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <img src="./images/logo.png" alt="Emoji de Capelo">
-            <h1>Calculadora de médias</h1>
-        </header>
-        <form id="form-atividade">
-            <input id="nome-atividade" type="text" required placeholder="Nome da atividade"/>
-            <input id="nota-atividade" type="number" required placeholder="Nota da atividade" min="0" max="10"/>
-            <button>Adicionar +</button>
-        </form>
-        <table cellspacing="0">
-            <thead >
-                <tr>
-                    <th>Nome da Atividade</th>
-                    <th>Nota da atividade</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-            <tfoot class="tfut">
-                <tr>
-                    <td>Média final</td>
-                    <td id="media-final-valor">-</td>
-                    <td id="media-final-resultado">-</td>
-                </tr>
-            </tfoot>
-        </table>
-    </div>
-    <script src="./main.js"></script>
+    <header>
+        <h1>Galeria de Fotos</h1>
+        <button type="button">Nova imagem +</button>
+    </header>
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <input type="url" id="endereco-imagem-nova" required placeholder="URL da imagem">
+        <button id="button-add" type="submit">Adicionar</button>
+        <button id="button-cancel" type="reset">Cancelar</button>
+    </form>
+    <ul>
+        <li>
+            <img src="https://img.freepik.com/free-photo/redeyed-tree-frog-closeup-agalychnis-callidryas-red-eyes-closeup_488145-3176.jpg?t=st=1723467709~exp=1723471309~hmac=ba15417cc7f4abad72300efe6fd87771afa9e7a0913247b40a76d4fe91d750fa&w=1380" alt="Sapinhos verdes empuleirados em um galho">
+            <div class="overlay-image-link">
+                <a href="https://img.freepik.com/free-photo/redeyed-tree-frog-closeup-agalychnis-callidryas-red-eyes-closeup_488145-3176.jpg?t=st=1723467709~exp=1723471309~hmac=ba15417cc7f4abad72300efe6fd87771afa9e7a0913247b40a76d4fe91d750fa&w=1380" target="_blank">
+                    ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="https://img.freepik.com/free-photo/flying-frog-closeup-beautiful-tree-frog-red-flower-animal-closeup-rhacophorus-reinwardtii_488145-47.jpg?t=st=1723467693~exp=1723471293~hmac=afe38899e34d59660e779ce7e819f91af2d36db1e58dc3bbb4965a84c43fc568&w=740" alt="Sapinho verde empuleirado em frutinhas">
+            <div class="overlay-image-link">
+                <a href="https://img.freepik.com/free-photo/flying-frog-closeup-beautiful-tree-frog-red-flower-animal-closeup-rhacophorus-reinwardtii_488145-47.jpg?t=st=1723467693~exp=1723471293~hmac=afe38899e34d59660e779ce7e819f91af2d36db1e58dc3bbb4965a84c43fc568&w=740" target="_blank">
+                    ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="https://img.freepik.com/free-photo/javan-tree-frog-front-view-orange-fruit_488145-218.jpg?t=st=1723467688~exp=1723471288~hmac=b4718873573e783cebddb4dfa06b12a907e237c4782d7f49d54f1d71c40748ae&w=1380" alt="Sapinho verde empuleirado em uma flor seca">
+            <div class="overlay-image-link">
+                <a href="https://img.freepik.com/free-photo/javan-tree-frog-front-view-orange-fruit_488145-218.jpg?t=st=1723467688~exp=1723471288~hmac=b4718873573e783cebddb4dfa06b12a907e237c4782d7f49d54f1d71c40748ae&w=1380" target="_blank">
+                    ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+    </ul>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./main.js"></script>
+
 </body>
+
 </html>

@@ -4,73 +4,161 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-header{
-    background-color: #5f27cd;
-    padding: 16px 0;
-    color: #fff;
-    display: flex;
-    border-bottom: 16px solid #341f97;
-    justify-content: center;
-    text-transform: uppercase;
-    font-style: italic;
-}
-header button{
-    margin-left: 16px;
-}
-form{
-background-color: #c8d6e5;
-padding: 24px 0;
-text-align: center;
-display: none;
-}
-form h2{
-    margin-bottom: 16px;
-}
-form input, form button{
-    padding: 8px;
-}
-form button{
-    background-color: #009432;
-    border: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    cursor: pointer;
-}
-#button-cancel{
-    background-color: red;
+
+.container {
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
 }
 
-ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-ul li{
-    max-width: 25%;
-    list-style: none;
-    position: relative;
-    max-height: 280px;
-    overflow-y: hidden;
-}
-ul li img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.overlay-image-link{
-    padding: 16px;
-    background-color: rgba(0,0,0,0.7);
-    position: absolute;
-    bottom: 0;
+header {
+    background-color: #192a56;
+    padding-top: 16px;
+    color: #fff;
+    position: sticky;
+    top: 0;
     left: 0;
-    width: 100%;
-    opacity: 0;
+    z-index: 1;
 }
-ul li:hover .overlay-image-link{
-    opacity: 1;
-    transition: all ease .5s;
+
+nav {
+    background-color: #575fcf;
+    padding: 16px 0;
+    display: none;
 }
-.overlay-image-link a{
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
     color: #fff;
     text-decoration: none;
+}
+
+html{
+    overflow-x: hidden;
+}
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+.menu-burger{
+    width: 32px;
+    cursor: pointer;
+}
+.menu-burger span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+.container-flex{
+    display: flex;
+}
+#sobre-loja img{
+    max-width: 400px;
+    margin-right: 24px;
+    border-radius: 0.3em;
+    object-fit: cover;
+    max-height: 45em;
+}
+section{
+    padding: 48px 0;
+}
+
+section h2{
+    margin: 16px 0;
+}
+section p{
+    margin-bottom: 8px;
+}
+.lista-veiculos{
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 5%;
+}
+.lista-veiculos li{
+    list-style: none;
+    max-width: 30%;
+}
+.lista-veiculos li img{
+    max-width: 100%;
+    border-radius: 0.2em;
+}
+.lista-veiculos li h3{
+    margin: 8px 0 4px 0;
+}
+.price{
+    margin: 12px 0;
+    display: block;
+}
+.price del{
+    color: #192a5638;
+    font-size: 14px;
+}
+button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #192a56;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 16px;
+    cursor: pointer;
+    border-radius: 0.4em;
+}
+
+.form-campo{
+    margin-bottom: 16px;
+    width: 280px;
+}
+.form-campo label{
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+    border: solid 1px #192a563a;
+    margin: 8px 0 16px 0;
+}
+textarea{
+    resize: none;
+    height: 180px;
+}
+form button{
+    max-width: 40%;
+}
+
+
+footer .container, footer li a{
+    justify-content: space-between;
+    align-items: center;
+}
+footer{
+    background-color: #192a56;
+    color: #fff;
+    padding: 16px 0;
+}
+footer li{
+    list-style: none;
+}
+footer li img{
+    height: 32px;
+    margin: 4px 0px 0 10px;
 }

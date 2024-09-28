@@ -1,279 +1,139 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBAC Motors</title>
-    <link rel="preconnect" href="http://fonts.googleapis.com">
-    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
+    <title>Portal de noticias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/main.css">
 </head>
-
 <body>
     <header>
-        <div class="container container-flex">
-            <h1>EBAC Motors</h1>
-            <div class="menu-burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <div class="container">
+            <h1>EBAC News</h1>
+            <form>
+                <input type="search" placeholder="Busque no site">
+                <button type="submit">Pesquisar</button>
+            </form>
         </div>
-        <nav>
-            <div class="container">
-                <ul>
-                    <li>
-                        <a href="#">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#">Em destaque</a>
-                    </li>
-                    <li>
-                        <a href="#">Promoções</a>
-                    </li>
-                    <li>
-                        <a href="#">Contato</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="botao-menu">
+            <button type="button">Abrir menu</button>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    Esportes
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Futebol</a>
+                        </li>
+                        <li>
+                            <a href="#">Vôlei</a>
+                        </li>
+                        <li>
+                            <a href="#">Basquete</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Economia
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Bolsa de valores</a>
+                        </li>
+                        <li>
+                            <a href="#">Imposto de renda</a>
+                        </li>
+                        <li>
+                            <a href="#">Finanças pessoais</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
         </nav>
     </header>
-    <div id="carousel-imagens">
-        <img src="./images/slide1.png" alt="Carro Porsche">
-        <img src="./images/slide2.png" alt="Carro BMW">
-        <img src="./images/slide3.png" alt="Carro da Ford">
+
+    <div class="conteudo container">
+
+        <main>
+            <section class="destaque">
+                <h2>Em destaque</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="//via.placeholder.com/500x500" alt="imagem-placeholder">
+                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis adipisci.</h3>
+                    </a>
+                </article>
+            </section>
+
+            <section>
+                <h2>Útilmas noiticas</h2>
+                <div class="ultimas">
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="//via.placeholder.com/500x500" alt="imagem-placeholder">
+                            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis adipisci.</h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="//via.placeholder.com/500x500" alt="imagem-placeholder">
+                            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis adipisci.</h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="//via.placeholder.com/500x500" alt="imagem-placeholder">
+                            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis adipisci.</h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="//via.placeholder.com/500x500" alt="imagem-placeholder">
+                            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis adipisci.</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <section class="novidades">
+                <h2>Novidades</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="//via.placeholder.com/300x300" alt="imagem-placeholder">
+                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis adipisci.</h3>
+                    </a>
+                </article>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="//via.placeholder.com/300x300" alt="imagem-placeholder">
+                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis adipisci.</h3>
+                    </a>
+                </article>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="//via.placeholder.com/300x300" alt="imagem-placeholder">
+                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis adipisci.</h3>
+                    </a>
+                </article>
+            </section>
+        </aside>
     </div>
 
-    <section id="sobre-loja">
-        <div class="container container-flex">
-            <img src="./images/loja.jpg" alt="Imagem da Loja EBAC Motors">
-            <div>
-                <h2>Sobre A Ebac Motors</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eligendi ex et veritatis sapiente autem reiciendis, ab at provident suscipit consequatur eveniet, iure minima magni vitae officiis non aut laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptas laudantium corporis iusto dolores assumenda recusandae obcaecati. Similique tempora excepturi iusto totam, assumenda distinctio, esse in quibusdam nisi, facere magni.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="destaque">
-        <div class="container">
-            <h2>Em destaque</h2>
-            <ul class="container-flex lista-veiculos">
-
-                <li>
-                    <img src="./images/carro-bmw.png" alt="Carro bmw">
-                    <h3>Carro BMW</h3>
-                    <p>
-                        Câmbio automático, 4 portas, vidros e travas elétricas
-                    </p>
-                    <div class="price">
-                        <strong>R$ 75.000,00</strong>
-                    </div>
-                    <button type="button">Tenho Interesse</button>
-                </li>
-
-                <li>
-                    <img src="./images/carro-bmw.png" alt="Carro bmw">
-                    <h3>Carro BMW</h3>
-                    <p>
-                        Câmbio automático, 4 portas, vidros e travas elétricas
-                    </p>
-                    <div class="price">
-                        <strong>R$ 75.000,00</strong>
-                    </div>
-                    <button type="button">Tenho Interesse</button>
-                </li>
-
-                <li>
-                    <img src="./images/carro-bmw.png" alt="Carro bmw">
-                    <h3>Carro BMW</h3>
-                    <p>
-                        Câmbio automático, 4 portas, vidros e travas elétricas
-                    </p>
-                    <div class="price">
-                        <strong>R$ 75.000,00</strong>
-                    </div>
-                    <button type="button">Tenho Interesse</button>
-                </li>
-
-                <li>
-                    <img src="./images/carro-bmw.png" alt="Carro bmw">
-                    <h3>Carro BMW</h3>
-                    <p>
-                        Câmbio automático, 4 portas, vidros e travas elétricas
-                    </p>
-                    <div class="price">
-                        <strong>R$ 75.000,00</strong>
-                    </div>
-                    <button type="button">Tenho Interesse</button>
-                </li>
-
-                <li>
-                    <img src="./images/carro-bmw.png" alt="Carro bmw">
-                    <h3>Carro BMW</h3>
-                    <p>
-                        Câmbio automático, 4 portas, vidros e travas elétricas
-                    </p>
-                    <div class="price">
-                        <strong>R$ 75.000,00</strong>
-                    </div>
-                    <button type="button">Tenho Interesse</button>
-                </li>
-                
-            </ul>
-        </div>
-    </section>
-
-    <section id="promocao">
-        <div class="container">
-            <h2>Promoções</h2>
-            <ul class="container-flex lista-veiculos">
-
-                <li>
-                    <img src="./images/carro-bmw.png" alt="Carro bmw">
-                    <h3>Carro BMW</h3>
-                    <p>
-                        Câmbio automático, 4 portas, vidros e travas elétricas
-                    </p>
-                    <div class="price">
-                        <del>R$ 100.000,00</del>
-                        <strong>R$ 75.000,00</strong>
-                    </div>
-                    <button type="button">Tenho Interesse</button>
-                </li>
-
-                <li>
-                    <img src="./images/carro-bmw.png" alt="Carro bmw">
-                    <h3>Carro BMW</h3>
-                    <p>
-                        Câmbio automático, 4 portas, vidros e travas elétricas
-                    </p>
-                    <div class="price">
-                        <del>R$ 100.000,00</del>
-                        <strong>R$ 75.000,00</strong>
-                    </div>
-                    <button type="button">Tenho Interesse</button>
-                </li>
-
-                <li>
-                    <img src="./images/carro-bmw.png" alt="Carro bmw">
-                    <h3>Carro BMW</h3>
-                    <p>
-                        Câmbio automático, 4 portas, vidros e travas elétricas
-                    </p>
-                    <div class="price">
-                        <del>R$ 100.000,00</del>
-                        <strong>R$ 75.000,00</strong>
-                    </div>
-                    <button type="button">Tenho Interesse</button>
-                </li>
-
-                <li>
-                    <img src="./images/carro-bmw.png" alt="Carro bmw">
-                    <h3>Carro BMW</h3>
-                    <p>
-                        Câmbio automático, 4 portas, vidros e travas elétricas
-                    </p>
-                    <div class="price">
-                        <del>R$ 100.000,00</del>
-                        <strong>R$ 75.000,00</strong>
-                    </div>
-                    <button type="button">Tenho Interesse</button>
-                </li>
-
-                <li>
-                    <img src="./images/carro-bmw.png" alt="Carro bmw">
-                    <h3>Carro BMW</h3>
-                    <p>
-                        Câmbio automático, 4 portas, vidros e travas elétricas
-                    </p>
-                    <div class="price">
-                        <del>R$ 100.000,00</del>
-                        <strong>R$ 75.000,00</strong>
-                    </div>
-                    <button type="button">Tenho Interesse</button>
-                </li>
-                
-            </ul>
-        </div>
-    </section>
-
-<section id="contato">
-    <div class="container">
-        <h2>Entre em contato</h2>
-        <form>
-            <div class="form-campo">
-                <label for="nome">Nome</label>
-                <input name="nome" type="text" id="nome">
-            </div>
-            <div class="form-campo">
-                <label for="telefone">Telefone</label>
-                <input name="telefone" type="tel" id="telefone">
-            </div>
-            <div class="form-campo">
-                <label for="email">e-mail</label>
-                <input name="email" type="email" id="email">
-            </div>
-            <div class="form-campo">
-                <label for="veiculoDeInteresse">Veículo de Interesse</label>
-                <input name="veiculoDeInteresse" type="text" id="veiculoDeInteresse">
-            </div>
-            <div class="form-campo">
-                <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem"></textarea>
-            </div>
-
-            <div class="form-campo">
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
-    </div>
-</section>
-
-<footer>
-    <div class="container container-flex">
-        <p>
-            2024 &copy;Ebac Motors - Todos os direitos reservados
-        </p>
-        <ul class="container-flex">
-            <li>
-                <a href="#">
-                    <img src="./icones/facebook.png" alt="Facebook logo">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./icones/instagram.png" alt="instagram logo">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./icones/youtube.png" alt="youtube logo">
-                </a>
-            </li>
-        </ul>
-    </div>
-</footer>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="./js/jquery.mask.min.js"></script>
-<script src="./js/jquery.validate.min.js"></script>
-<script src="./js/messages_pt_BR.min.js"></script>
-<script src="./js/main.js"></script>
 
 
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.botao-menu').click(function(){
+                $('.menu').slideToggle();
+            })
+        });
+    </script>
 </body>
-
 </html>

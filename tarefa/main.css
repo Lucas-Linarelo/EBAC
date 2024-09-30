@@ -1,0 +1,8 @@
+.container{
+    margin: 10vh auto;
+    max-width: 33%;
+    margin-bottom: 3em;
+}
+form button{
+    margin: 2em 0;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS - Dropdown</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+</head>
+<body>
+    <div class="dropdown">
+        <button data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle">
+            Cadastrar
+        </button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item">
+                <a href="#">Novo usuário</a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">Novo fornecedor</a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">Novo funcinário</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="btn-group">
+        <button class="btn btn-primary">
+            Cadastrar
+        </button>
+        <button data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle dropdown-toggle-split"></button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item">
+                <a href="#">Novo usuário</a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">Novo fornecedor</a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">Novo funcinário</a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

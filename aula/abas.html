@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abas</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .nav-link{
+            background-color: #ccc;
+        }
+        .tab-content{
+            height: 10vh;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container justify-content-end">
+        <nav class="nav nav-tabs">
+            <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Aba 1</button>
+            <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Aba 2</button>
+            <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Aba 3</button>
+        </nav>
+        <div class="tab-content">
+            <div class="tab-pane active" id="aba1">
+                Conteudo aba 1
+            </div>
+            <div class="tab-pane" id="aba2">
+                Conteudo aba 2
+            </div>
+            <div class="tab-pane" id="aba3">
+                Conteudo aba 3
+            </div>
+        </div>
+    </div>
+
+    <div class="container justify-content-end">
+        <nav class="nav nav-pills">
+            <button data-bs-toggle="tab" data-bs-target="#aba4" class="nav-link active" type="button">Aba 1</button>
+            <button data-bs-toggle="tab" data-bs-target="#aba5" class="nav-link" type="button">Aba 2</button>
+            <button data-bs-toggle="tab" data-bs-target="#aba6" class="nav-link" type="button">Aba 3</button>
+        </nav>
+        <div class="tab-content">
+            <div class="tab-pane active" id="aba4">
+                Conteudo aba tipo botão 1
+            </div>
+            <div class="tab-pane" id="aba5">
+                Conteudo aba tipo botão 2
+            </div>
+            <div class="tab-pane" id="aba6">
+                Conteudo aba tipo botão 3
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

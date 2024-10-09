@@ -1,34 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="main.css">
+    <title>Pratique - Módulo 13</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .container {
+            max-width: 1360px;
+            margin: 0 auto;
+            color: #FCFBF6;
+            padding: 0 15px;
+        }
+        header {
+            background-color: #19181a;
+            padding: 0.5em;
+        }
+        header h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        footer {
+            color: #69696C;
+            background-color: #19181a;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+        .carousel-item img {
+            height: 50vh;
+            object-fit: cover;
+            width: 100%;
+        }
+        .card {
+            border-radius: 1em;
+            margin: 2em 0;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 1em 1em 0 0;
+        }
+        .card-img-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        @media (max-width: 640px) {
+            .carousel-item img {
+                height: 30vh;
+            }
+            header h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h2>Entre em contato</h2>
-                <form>
-                    <label class="form-label" for="nome">Seu nome:</label>
-                    <input class="form-control form-control-sm" type="text" id="nome">
-                    <label class="form-label" for="email">Seu e-mail:</label>
-                    <input class="form-control form-control-sm" id="email" type="email">
-                    <label class="form-label" for="telefone">Seu telefone:</label>
-                    <input class="form-control form-control-sm" id="telefone" type="telefone">
-                    <div class="d-flex justify-content-center">
-                        <button class="btn btn-success btn-sm">Enviar</button>
-                    </div>
-                    
-                </form>
+    <header>
+        <div class="container d-flex justify-content-center">
+            <h2>NAZA</h2>
+        </div>
+    </header>
+
+    
+    <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="2500" class="carousel-item active">
+                <img src="./media/00.png" alt="Quasar Outflows (Illustration)">
+                <div class="carousel-caption">
+                    <h5>Quasar Outflows (Illustration)</h5>
+                </div>
+            </div>
+            <div data-bs-interval="2500" class="carousel-item">
+                <img src="./media/01.png" alt="Hubble Monitors Changing Weather and Seasons on Uranus">
+                <div class="carousel-caption">
+                    <h5>Hubble Monitors Changing Weather and Seasons on Uranus</h5>
+                </div>
+            </div>
+            <div data-bs-interval="2500" class="carousel-item">
+                <img src="./media/02.png" alt="Hubble Views Cosmic Dust Lanes">
+                <div class="carousel-caption">
+                    <h5>Hubble Views Cosmic Dust Lanes</h5>
+                </div>
             </div>
         </div>
 
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+        </div>
+    
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="./media/03.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-tittle"> Título do card</h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem expedita sit voluptatibus at magni delectus amet sequi labore deserunt cum. Error illum deserunt quasi veritatis fugit, eos ex! Blanditiis, voluptatem!
+                        </p>
+                        <a href="https://www.flickr.com/photos/nasahubble/albums/72157701348209172/" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="./media/03.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-tittle"> Título do card</h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem expedita sit voluptatibus at magni delectus amet sequi labore deserunt cum. Error illum deserunt quasi veritatis fugit, eos ex! Blanditiis, voluptatem!
+                        </p>
+                        <a href="https://www.flickr.com/photos/nasahubble/albums/72157701348209172/" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="./media/03.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-tittle"> Título do card</h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem expedita sit voluptatibus at magni delectus amet sequi labore deserunt cum. Error illum deserunt quasi veritatis fugit, eos ex! Blanditiis, voluptatem!
+                        </p>
+                        <a href="https://www.flickr.com/photos/nasahubble/albums/72157701348209172/" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <div class="container-fluid">
+            <p class="mb-0"> NAZA - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+
+<script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>

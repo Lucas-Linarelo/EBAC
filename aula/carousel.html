@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - carousel</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .container{
+            width: 1360px;
+            margin: 0 auto;
+        }
+        .carousel-item img{
+            height: 25em;
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="carousel-exemplo" class="carousel slide container" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="2500" class="carousel-item active">
+                <img src="https://img.freepik.com/free-photo/beautiful-panoramic-shot-cliffs-with-calm-sea_181624-21278.jpg?t=st=1727907333~exp=1727910933~hmac=f746782d297d25fea5ce79331a37f358f4cd249ff7b9582734c01f5a4d3e19b9&w=1380" alt="">
+                <div class="carousel-caption">
+                    <h3>Foto paisagem</h3>
+                </div>
+            </div>
+            <div data-bs-interval="2500" class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/beautiful-landscape-with-fields-mountains-scenic-sunset_181624-49128.jpg?t=st=1727907423~exp=1727911023~hmac=41fbb863eca28a8260dcec1767bb0998de8e89340c2b959c9bb684532c79fbd3&w=1380" alt="">
+                <div class="carousel-caption">
+                    <h3>Foto paisagem</h3>
+                </div>
+            </div>
+            <div data-bs-interval="2500" class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/panoramic-aerial-shot-land-surrounded-by-sea-orange-sky-sunset_181624-31858.jpg?t=st=1727907343~exp=1727910943~hmac=63de4ff8d51df55d9f06757b9531880e6ac1dd3403c89cc4e2b7a3dd4f4ab764&w=1380" alt="">
+                <div class="carousel-caption">
+                    <h3>Foto paisagem</h3>
+                </div>
+            </div>
+        </div>
+
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+        </div>
+    
+    </div>
+
+
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

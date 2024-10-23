@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+.container {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 16px 0;
+  background-color: #5AC3D9;
+  text-align: center;
+  color: #FCFBF6;
+}
+
+.form-container {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 720px;
+}
+.form-container h2 {
+  font-size: 3em;
+  text-align: center;
+}
+.form-container form {
+  width: 100%;
+  max-width: 480px;
+  margin-top: 40px;
+}
+.form-container form label {
+  font-weight: bold;
+  cursor: pointer;
+}
+.form-container form input {
+  padding: 8px;
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  border: none;
+  font-size: 16px;
+  background-color: transparent;
+  border-bottom: solid 2px #5AC3D9;
+}
+.form-container form button {
+  padding: 8px;
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  border: none;
+  font-size: 16px;
+  background-color: #90CFD4;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.5em;
+  color: #FCFBF6;
+}
+.form-container form button:hover {
+  background-color: #5AC3D9;
+}
+
+@media screen and (max-width: 767px) {
+  .form-container {
+    height: calc(50vh - 70px);
+  }
+  .form-container h2 {
+    font-size: 1.5em;
+  }
+  .form-container form button {
+    padding: 1em 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./aula/source/main.scss ./aula/build/main.css --watch",
+    "sass": "sass ./tarefa/source/main.scss ./tarefa/build/main.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

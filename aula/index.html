@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="smacss/base.css">
+    <link rel="stylesheet" href="smacss/layout.css">
+    <link rel="stylesheet" href="smacss/module.css">
+    <link rel="stylesheet" href="smacss/tema-a.css">
+    <title>Document</title>
+</head>
+<body class="tema-a">
+    <div id="header">
+        <div class="container">
+            <h1 class="title">Nome do site</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Produto</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="accordion">
+            <header class="accordion-header">
+                Nome do Accordion
+            </header>
+            <p class="accordion-content">
+                Conteudo
+            </p>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="mensagem mensagem-error">
+                <h5 class="mensagem-titulo">Atenção</h5>
+                <p class="mensagem-conteudo">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis deserunt ipsam quos corrupti officiis commodi, laboriosam, est odio nihil autem molestiae recusandae possimus necessitatibus a similique laborum culpa quis?
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- <script>    //longa
+        const accordions = document.querySelectorAll('.accordion-header');
+        for (let i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener('click', function (e) {
+                if(e.target.parentNode.classList.contains('opened')){
+                    e.target.parentNode.classList.remove('opened');
+                } else{
+                    e.target.parentNode.classList.add('opened');
+                }
+            });
+        }
+    </script>     -->
+
+    <script>    //Simplificada
+        const accordions = document.querySelectorAll('.accordion-header');
+        for (let i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener('click', function (e) {
+                e.target.parentNode.classList.toggle('opened');
+            });
+        }
+    </script>  
+
+</body>
+</html>

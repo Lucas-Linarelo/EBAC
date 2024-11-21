@@ -171,6 +171,26 @@
     </div>
   </div>
 
+  <div style="flex: 0 0 calc(10% - 10px);margin:5px;">
+    <div style="width:100px;height:100px;background-color:#DC143C;border-radius:8px;text-align:center;">
+      <div style="font-size:13px;font-weight:bold;">#DC143C</div>
+    </div>
+  </div>
+  <div style="flex: 0 0 calc(10% - 10px);margin:5px;">
+    <div style="width:100px;height:100px;background-color:#302B54;border-radius:8px;text-align:center;">
+      <div style="font-size:13px;font-weight:bold;">#302B54</div>
+    </div>
+  <div style="flex: 0 0 calc(10% - 10px);margin:5px;">
+    <div style="width:100px;height:100px;background-color:#6B46C1;border-radius:8px;text-align:center;">
+      <div style="font-size:13px;font-weight:bold;">#6B46C1</div>
+    </div>
+      <div style="flex: 0 0 calc(10% - 10px);margin:5px;">
+    <div style="width:100px;height:100px;background-color:#9E1B32;border-radius:8px;text-align:center;">
+      <div style="font-size:13px;font-weight:bold;">#9E1B32</div>
+    </div>
+    
+  </div>
+
 </div>
 
 #### Baseado na paleta de Elle Kasai

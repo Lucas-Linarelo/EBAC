@@ -35,12 +35,21 @@
     }
     .text--bg{
         @include text(18px);
+        @media(max-width: 768px){
+            @include text(15px)
+        }
     }
     .text--md{
         @include text;
+        @media(max-width: 768px){
+            @include text(14px)
+        }
     }
     .text--sm{
-        @include text(12px)
+        @include text(12px);
+        @media(max-width: 768px){
+            @include text(11px)
+        }
     }
     .text-link{
         @include text(18px);
@@ -54,12 +63,21 @@
     }
     .title--bg{
         @include title(44px);
+        @media(max-width: 768px){
+            @include title(26px)
+        }
     }
     .title--md{
         @include title;
+        @media(max-width: 768px){
+            @include title(24px)
+        }
     }
     .title--sm{
-        @include title(28px)
+        @include title(28px);
+        @media(max-width: 768px){
+            @include title(22px)
+        }
     }
 
 
@@ -112,6 +130,10 @@ body{
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
+    @media(max-width: 768px){
+        display: block;
+    }
+
     img{
         max-width: 100%;
     }
@@ -140,6 +162,13 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media(max-width: 768px){
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
+
         }
 
     }

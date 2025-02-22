@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "babel aula/src --watch -d aula/dist"
+    "build": "babel src --watch -d dist"
   },
   "browserslist":">0.25%",
   "devDependencies": {
